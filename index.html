@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Image Filter Generator</title>
+</head>
+
+<body>
+    <div id="app-container">
+        <div id="canvas-above">
+            <div>
+                <h3>___wifgat generator</h3>
+            </div>
+            <div>
+                <label for="imageLoader" class="button">Choose File</label>
+                <input type="file" id="imageLoader" class="upload" name="imageLoader" style="display: none;" />
+                <button id="startCameraBtn">Start Camera</button>
+                <video id="videoFeed" style="display: none;" width="600" height="600"></video>
+
+            </div>
+        </div>
+        <div>
+            <canvas id="imageCanvas" width="600" height="600"></canvas>
+        </div>
+        <div id="canvas-below">
+            <div>
+                <button id="saveBtn">Save Image</button>
+                <!-- Toggle Button for removing background -->
+                <button id="toggleBackgroundBtn">Toggle background</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="backgroundRemoval.js">
+    </script>
+</body>
+
+</html>

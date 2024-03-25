@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Truculenta&display=swap');
+
+body {
+    user-select: none;
+    background-color: #000;
+    font-family: Truculenta;
+    color: #fff;
+    margin: auto;
+    height: 100%;
+}
+
+#app-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    gap: 10px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+
+#canvas-above {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Modify the input[type="file"] selector */
+input[type="file"] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+
+#imageCanvas {
+    border: 3px double rgb(143, 143, 143);
+    position: relative; /* Necessary for accurate mouse coordinates */
+    display: flex;
+    margin: auto;
+    filter: drop-shadow(2px 2px 5px rgb(43, 43, 43));
+  }
+
+
+
+  #canvas-below {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  #canvas-below div {
+    position: relative;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+  }
+
+ button {
+    font-family: Truculenta;
+    background-color: #20d7f7;
+    color: white;
+    font-size: 14pt;
+    border-radius: 5px;
+    border: none;
+    text-shadow: 0px 0px 2px black;
+  }
+
+  /* Existing button styles */
+button,
+.button {
+    font-family: 'Truculenta', sans-serif;
+    background-color: #20d7f7;
+    color: white;
+    font-size: 14pt;
+    border-radius: 5px;
+    border: none;
+    text-shadow: 0px 0px 2px black;
+    padding: 0px 5px; /* You might need to adjust padding */
+    cursor: pointer;
+    text-align: center;
+    display: inline-block; /* Align with other inline elements */
+    margin: 5px; /* Adjust as needed */
+}
+
+  #toggleBackgroundBtn {
+    font-family: Truculenta;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    font-size: 14pt;
+    border-radius: 5px;
+    border: none;
+    text-shadow: 0px 0px 2px black;
+    margin-left: 10px; /* Add some space between the save button and this toggle */
+}
